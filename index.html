@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>50/50 Catering</title>
+  <meta name="description" content="50/50 Catering – god mat, gode folk, gode tider. Plukk fra menyen og bestill catering til ditt neste arrangement." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="#top" class="logo">
+        <span class="fraction">50/50</span> CATERING
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#om-oss">Om oss</a></li>
+          <li><a href="#meny">Meny</a></li>
+          <li><a href="#bestill">Bestill</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container">
+        <span class="crown">👑</span>
+        <h1>
+          <span class="fifty">50</span>
+          <span class="fifty">50</span>
+        </h1>
+        <span class="catering-word">Catering</span>
+        <p class="tagline">
+          <span>Good food.</span><span>Good people.</span><span>Good times.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#meny" class="btn btn-primary">Se menyen</a>
+          <a href="#kontakt" class="btn btn-outline">Kontakt oss</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OM OSS ===================== -->
+    <section id="om-oss" class="alt">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">Om oss</span>
+          <h2>Hvem er 50/50?</h2>
+          <p>Skriv noe om dere</p>
+        </div>
+        <div class="about-badge">
+          <strong>Good food. Good people. Good times.</strong>
+          <p>Vi leverer catering med smak og stil til fest, feiring og alt derimellom.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENY ===================== -->
+    <section id="meny">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Meny</span>
+          <h2>Plukk det du vil ha</h2>
+          <p class="menu-note">Eksempler – ta kontakt for full meny og tilpasninger</p>
+        </div>
+
+        <form id="order-form" action="https://formspree.io/f/DITT_SKJEMA_ID" method="POST">
+
+          <div class="menu-categories">
+
+            <div class="menu-category">
+              <h3>Forretter</h3>
+              <div class="menu-items">
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Bruschetta med tomat og basilikum" data-price="45" />
+                  <span class="item-info">
+                    <span class="item-name">Bruschetta med tomat og basilikum</span>
+                    <span class="item-desc">Ristet brød, frisk tomat, basilikum</span>
+                  </span>
+                  <span class="item-price">45,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Hjemmelaget hummus med grønnsaksstaver" data-price="40" />
+                  <span class="item-info">
+                    <span class="item-name">Hjemmelaget hummus</span>
+                    <span class="item-desc">Med grønnsaksstaver</span>
+                  </span>
+                  <span class="item-price">40,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Røkt laks på rugbrød" data-price="55" />
+                  <span class="item-info">
+                    <span class="item-name">Røkt laks på rugbrød</span>
+                    <span class="item-desc">Med rømme og dill</span>
+                  </span>
+                  <span class="item-price">55,-</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h3>Hovedretter</h3>
+              <div class="menu-items">
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Kylling i karrisaus med ris" data-price="145" />
+                  <span class="item-info">
+                    <span class="item-name">Kylling i karrisaus</span>
+                    <span class="item-desc">Servert med ris</span>
+                  </span>
+                  <span class="item-price">145,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Biff bourguignon" data-price="175" />
+                  <span class="item-info">
+                    <span class="item-name">Biff bourguignon</span>
+                    <span class="item-desc">Langtidsbraisert med rotgrønnsaker</span>
+                  </span>
+                  <span class="item-price">175,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Vegetarisk lasagne" data-price="130" />
+                  <span class="item-info">
+                    <span class="item-name">Vegetarisk lasagne</span>
+                    <span class="item-desc">Med spinat og ricotta</span>
+                  </span>
+                  <span class="item-price">130,-</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h3>Tilbehør</h3>
+              <div class="menu-items">
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Potetgratin" data-price="35" />
+                  <span class="item-info">
+                    <span class="item-name">Potetgratin</span>
+                  </span>
+                  <span class="item-price">35,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Grønn salat" data-price="25" />
+                  <span class="item-info">
+                    <span class="item-name">Grønn salat</span>
+                  </span>
+                  <span class="item-price">25,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Nybakt brød" data-price="20" />
+                  <span class="item-info">
+                    <span class="item-name">Nybakt brød</span>
+                  </span>
+                  <span class="item-price">20,-</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h3>Desserter</h3>
+              <div class="menu-items">
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Sjokoladefondant" data-price="55" />
+                  <span class="item-info">
+                    <span class="item-name">Sjokoladefondant</span>
+                  </span>
+                  <span class="item-price">55,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Fruktsalat" data-price="35" />
+                  <span class="item-info">
+                    <span class="item-name">Fruktsalat</span>
+                  </span>
+                  <span class="item-price">35,-</span>
+                </label>
+                <label class="menu-item">
+                  <input type="checkbox" name="rett" data-name="Panna cotta" data-price="45" />
+                  <span class="item-info">
+                    <span class="item-name">Panna cotta</span>
+                  </span>
+                  <span class="item-price">45,-</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ===================== BESTILL ===================== -->
+          <div class="order-panel" id="bestill">
+            <h3>Din bestilling</h3>
+
+            <div class="order-grid">
+              <div class="field">
+                <label for="navn">Navn</label>
+                <input type="text" id="navn" name="Navn" required />
+              </div>
+              <div class="field">
+                <label for="epost">E-post</label>
+                <input type="email" id="epost" name="E-post" required />
+              </div>
+              <div class="field">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="Telefon" />
+              </div>
+              <div class="field">
+                <label for="dato">Ønsket dato</label>
+                <input type="text" id="dato" name="Ønsket dato" placeholder="f.eks. 12. september" />
+              </div>
+              <div class="field full">
+                <label for="kommentar">Kommentar (valgfritt)</label>
+                <textarea id="kommentar" name="Kommentar" placeholder="Allergier, ønsker eller annet du vil fortelle oss"></textarea>
+              </div>
+            </div>
+
+            <!-- Fylles ut automatisk med valgte retter og totalsum -->
+            <textarea name="Bestilling" id="order-summary" hidden readonly></textarea>
+            <input type="hidden" name="_subject" value="Ny bestilling – 50/50 Catering" />
+
+            <div class="total-row">
+              <span>Totalsum</span>
+              <span id="total-sum">0,- kr</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Send bestilling</button>
+            <p class="form-feedback" id="form-feedback"></p>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAKT ===================== -->
+    <section id="kontakt" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Kontakt</span>
+          <h2>Ta kontakt med oss</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="icon">📞</span>
+            <p><a href="tel:+4795258283">952 58 283</a></p>
+          </div>
+          <div class="contact-card">
+            <span class="icon">📍</span>
+            <p>Skriv noe om dere</p>
+          </div>
+          <div class="contact-card">
+            <span class="icon">🕐</span>
+            <p>Skriv noe om dere</p>
+          </div>
+          <div class="contact-card">
+            <span class="icon">📘</span>
+            <p><a href="https://www.facebook.com/5050catering" target="_blank" rel="noopener">Facebook</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> 50/50 Catering — Good food. Good people. Good times.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
